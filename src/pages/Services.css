@@ -1,0 +1,181 @@
+
+:root {
+  --paw: #e87979;
+  --dark: #cf5d66;
+  --ink: #34313d;
+  --muted: #77717c;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, .paw-brand {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+}
+
+.paw-brand {
+  color: var(--dark) !important;
+  font-size: 1.3rem;
+}
+
+.navbar .nav-link {
+  color: var(--ink);
+  font-weight: 600;
+  margin: 0 4px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--dark);
+}
+
+.paw-btn {
+  background: var(--paw);
+  border: 2px solid var(--paw);
+  color: white;
+  border-radius: 30px;
+  padding: 11px 23px;
+  font-weight: 700;
+  transition: 0.25s;
+}
+
+.paw-btn:hover {
+  background: var(--dark);
+  border-color: var(--dark);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.page-label {
+  display: inline-block;
+  background: #ffe1dc;
+  color: var(--dark);
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.page-banner {
+  background: linear-gradient(135deg, #fff3ef, #ffe4df);
+  padding: 70px 15px;
+}
+
+.page-banner h1 {
+  font-size: clamp(2.2rem, 5vw, 3.7rem);
+  margin: 18px 0;
+}
+
+.page-banner p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.content-section {
+  padding: 75px 0;
+}
+
+.service-card {
+  padding: 30px;
+  background: white;
+  border: 1px solid #f3e7e3;
+  border-radius: 22px;
+  box-shadow: 0 10px 35px #34313d0f;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px #34313d1f;
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.service-card h5 {
+  color: var(--dark);
+  margin-top: 18px;
+}
+
+.paw-footer {
+  background: #302d38;
+  color: white;
+  padding: 55px 0 25px;
+}
+
+.paw-footer h4,
+.paw-footer h5 {
+  margin-bottom: 17px;
+}
+
+.paw-footer p {
+  color: #d8d2dc;
+  line-height: 1.8;
+}
+
+.paw-footer a {
+  display: block;
+  color: #e8dfe8;
+  margin-bottom: 10px;
+}
+
+.paw-footer a:hover {
+  color: #ffaaa6;
+}
+
+.paw-footer hr {
+  border-color: #625b68;
+  margin: 32px 0 20px;
+}
+
+@media (max-width: 991px) {
+  .navbar .nav-link {
+    padding: 9px 0;
+  }
+
+  .navbar-nav .paw-btn {
+    display: inline-block;
+    width: max-content;
+    margin: 10px 0 !important;
+  }
+
+  .content-section {
+    padding: 55px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .paw-brand {
+    font-size: 1.1rem;
+  }
+
+  .page-banner {
+    padding: 50px 15px;
+  }
+
+  .service-card {
+    padding: 23px;
+  }
+}
