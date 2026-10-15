@@ -9,7 +9,7 @@ import Booking from "./pages/Booking.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Petgrooming-Shop">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
